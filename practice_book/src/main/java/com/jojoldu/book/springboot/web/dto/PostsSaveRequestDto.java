@@ -10,11 +10,15 @@ public class PostsSaveRequestDto {
     private String title;
     private String content;
     private String author;
+    private Integer like_count = 0;
+
+
     @Builder
-    public PostsSaveRequestDto(String title, String content, String author){
+    public PostsSaveRequestDto(String title, String content, String author, Integer like_count){
         this.title=title;
         this.content=content;
         this.author=author;
+        this.like_count=like_count;
     }
 
     public Posts toEntity(){
@@ -22,6 +26,7 @@ public class PostsSaveRequestDto {
                 .title(title)
                 .content(content)
                 .author(author)
+                .like_count(like_count)
                 .build();
     }
 }

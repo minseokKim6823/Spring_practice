@@ -3,20 +3,21 @@ package com.jojoldu.book.springboot.web.dto;
 import com.jojoldu.book.springboot.domain.posts.Posts;
 import lombok.Getter;
 
+import java.time.LocalDateTime;
+
 @Getter
-public class PostsResponseDto {
+public class PostsListResponseDto {
     private Long id;
     private String title;
-    private String content;
     private String author;
     private Integer like_count;
+    private LocalDateTime modifiedDate;
 
-    public PostsResponseDto(Posts entity){
-        this.id= entity.getId();
+    public PostsListResponseDto(Posts entity) {
+        this.id=entity.getId();
         this.title=entity.getTitle();
-        this.content=entity.getContent();
         this.author=entity.getAuthor();
         this.like_count=entity.getLike_count();
+        this.modifiedDate=entity.getModifiedDate();
     }
-
 }
