@@ -1,6 +1,7 @@
 package com.jojoldu.book.springboot.web.dto;
 
 import com.jojoldu.book.springboot.domain.posts.Posts;
+import com.fasterxml.jackson.annotation.JsonFormat;
 import lombok.Getter;
 
 import java.time.LocalDateTime;

@@ -25,7 +25,7 @@ public class Posts extends BaseTimeEntity{
 
 
     @Column(name = "like_count")
-    @ColumnDefault("0") //
+    @ColumnDefault("0")
     private Integer like_count;
 
     @Builder
