@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chat Room</title>
+    <link rel="stylesheet" th:href="@{/webjars/bootstrap/5.3.0/css/bootstrap.min.css}">
+</head>
+<body>
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-8 offset-2">
+            <div class="card">
+                <div class="card-header">
+                    Chat Room
+                </div>
+                <div class="card-body" id="chatArea">
+                    <!-- 채팅 메시지가 표시될 영역 -->
+                </div>
+                <div class="card-footer">
+                    <input type="text" id="username" class="form-control" placeholder="Your Name">
+                    <input type="text" id="message" class="form-control" placeholder="Type a message...">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script th:src="@{/webjars/sockjs-client/1.0.2/sockjs.min.js}"></script>
+<script th:src="@{/webjars/stomp-websocket/2.3.4/stomp.min.js}"></script>
+<script th:inline="javascript">
+    // JavaScript 코드 추가
+    const socket = new SockJS('/chat'); // "/chat" 엔드포인트로 WebSocket 연결
+    const stompClient = Stomp.over(socket); // Stomp 클라이언트 생성
+
+    stompClient.connect({}, function (frame) {
+        stompClient.subscribe('/topic/messages', function (response) {
+            const message = JSON.parse(response.body);
+            showMessage(message.sender + ': ' + message.content);
+        });
+    });
+
+    function sendMessage() {
+    const usernameInput = document.getElementById('username');
+        const messageInput = document.getElementById('message');
+        const username = usernameInput.value;
+        const message = messageInput.value;
+        stompClient.send('/app/chat', {}, JSON.stringify({ 'sender': username, 'content': message }));
+        messageInput.value = '';
+    }
+
+    function showMessage(message) {
+        const chatArea = document.getElementById('chatArea');
+        const messageElement = document.createElement('div');
+        messageElement.textContent = message;
+        chatArea.appendChild(messageElement);
+    }
+
+    document.getElementById('message').addEventListener('keyup', function (event) {
+        if (event.keyCode === 13) {
+            sendMessage();
+        }
+    });
+</script>
+</body>
+</html>
