@@ -5,17 +5,31 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="76ee03ee-aa40-408e-8b14-50d3d138204a" name="Changes" comment="CRUD">
-      <change afterPath="$PROJECT_DIR$/../chatting-Maven/src/main/java/com/example/chatting/Maven/ChatController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../chatting-Maven/src/main/java/com/example/chatting/Maven/DevLogWebSocketHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../chatting-Maven/src/main/java/com/example/chatting/Maven/WebSocketConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../chatting-Maven/src/main/webapp/WEB-INF/jsp/Chat.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../chatting-bygpt/src/main/java/com/example/chatting/bygpt/ChatController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../chatting-bygpt/src/main/java/com/example/chatting/bygpt/Message.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../chatting-bygpt/src/main/java/com/example/chatting/bygpt/WebSocketConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../chatting-bygpt/src/main/resources/static/css/styles.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../chatting-bygpt/src/main/resources/templates/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../demo/src/main/java/com/example/demo/ChatController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../demo/src/main/webapp/WEB-INF/jsp/chat.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../STOMP 예제 - 복사본 (2)/src/main/java/com/sample/stomp/config/SecurityConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../STOMP 예제 - 복사본 (2)/src/main/java/com/sample/stomp/config/StompWebSocketConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../STOMP 예제 - 복사본 (2)/src/main/java/com/sample/stomp/controller/ChatController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../STOMP 예제 - 복사본 (2)/src/main/java/com/sample/stomp/controller/RoomController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../STOMP 예제 - 복사본 (2)/src/main/java/com/sample/stomp/controller/StompChatController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../STOMP 예제 - 복사본 (2)/src/main/java/com/sample/stomp/dto/ChatMessageDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../STOMP 예제 - 복사본 (2)/src/main/java/com/sample/stomp/dto/ChatRoomDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../STOMP 예제 - 복사본 (2)/src/main/java/com/sample/stomp/handler/ChatHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../STOMP 예제 - 복사본 (2)/src/main/java/com/sample/stomp/repository/ChatRoomRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../STOMP 예제/src/main/java/com/sample/stomp/chatting/StompWebSocketConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../STOMP 예제/src/main/java/com/sample/stomp/model/DTO/ChatMessageDetailDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../STOMP 예제/src/main/java/com/sample/stomp/model/DTO/ChatMessageSaveDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../STOMP 예제/src/main/java/com/sample/stomp/model/DTO/ChatRoomDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../STOMP 예제/src/main/java/com/sample/stomp/model/DTO/ChatRoomDetailDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../STOMP 예제/src/main/java/com/sample/stomp/repository/ChatRoomRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../chatapp/src/main/java/com/example/chatapp/Chat.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../STOMP 예제/src/main/java/com/sample/stomp/StompApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/../STOMP 예제/src/main/java/com/sample/stomp/StompApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../STOMP 예제/src/main/java/com/sample/stomp/controller/ChatRoomController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../STOMP 예제/src/main/java/com/sample/stomp/controller/ChatRoomController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../STOMP 예제/src/main/java/com/sample/stomp/controller/MessageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../STOMP 예제/src/main/java/com/sample/stomp/controller/MessageController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../STOMP 예제/src/main/java/com/sample/stomp/controller/TimeEntity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../STOMP 예제/src/main/java/com/sample/stomp/model/ChatMessage.java" beforeDir="false" afterPath="$PROJECT_DIR$/../STOMP 예제/src/main/java/com/sample/stomp/model/ChatMessage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../STOMP 예제/src/main/java/com/sample/stomp/model/ChatRoom.java" beforeDir="false" afterPath="$PROJECT_DIR$/../STOMP 예제/src/main/java/com/sample/stomp/model/ChatRoom.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../STOMP 예제/src/main/java/com/sample/stomp/service/ChatService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../STOMP 예제/src/main/java/com/sample/stomp/service/ChatService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../STOMP 예제/src/main/resources/templates/chat/room.html" beforeDir="false" afterPath="$PROJECT_DIR$/../STOMP 예제/src/main/resources/templates/chat/room.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../STOMP 예제/src/main/resources/templates/chat/roomdetail.html" beforeDir="false" afterPath="$PROJECT_DIR$/../STOMP 예제/src/main/resources/templates/chat/roomdetail.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -79,7 +93,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit4",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4": "",
-    "last_opened_file_path": "C:/Users/alstj/Spring_Study/STOMP 예제",
+    "last_opened_file_path": "C:/Users/alstj/Spring_Study/chatapp",
     "settings.editor.selected.configurable": "reference.settingsdialog.project.gradle"
   }
 }]]></component>

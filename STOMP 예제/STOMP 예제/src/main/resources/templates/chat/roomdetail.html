@@ -1,0 +1,233 @@
+<!doctype html>
+<html lang="en" xmlns:v-on="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Websocket ChatRoom</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="/webjars/bootstrap/4.3.1/dist/css/bootstrap.min.css">
+    <style>
+        [v-cloak] {
+            display: none;
+        }
+        body {
+            background-color: #f2f2f2; /* Light gray background color for the whole page */
+        }
+
+        /* Add custom CSS to fix the message input field at the bottom */
+
+        #app {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh; /* Ensures the container takes up at least the full viewport height */
+        }
+
+        .chat-container {
+            flex: 1; /* Makes the chat container grow and take available space */
+            overflow-y: auto; /* Enables vertical scrolling if content exceeds container height */
+        }
+
+        .message-input {
+            background-color: #f7f7f7;
+            padding: 10px;
+        }
+
+        .message-container {
+            display: flex;
+            align-items: center;
+        }
+
+        .timestamp {
+            font-size: 12px; /* Make the font size smaller */
+            color: #999; /* Use gray color for the timestamp */
+            margin-left: 10px; /* Add some margin between the timestamp and the chat box */
+            white-space: nowrap; /* Prevent line breaks in the timestamp */
+        }
+
+        /* Add custom CSS to style the chat message boxes */
+        /* Add custom CSS to style the chat message boxes as speech bubbles */
+        .list-group-item {
+            border-radius: 20px; /* Rounded corners to create a speech bubble effect */
+            margin-bottom: 5px; /* Add some margin between chat message boxes */
+            padding: 10px 15px; /* Add padding to create some space inside the speech bubble */
+            max-width: 70%; /* Limit the maximum width of the speech bubble to avoid taking up the whole screen */
+        }
+
+        /* Add custom CSS for the user's messages (orange speech bubble) */
+        .user-message {
+            background-color: #FF9933; /* Orange color for the user's speech bubble */
+            color: #fff; /* White text color for better contrast */
+            border-color: #FF9933; /* Orange border color for the user's speech bubble */
+            align-self: flex-end; /* Align the user's speech bubble to the right */
+        }
+        .user-message .timestamp {
+            color: #fff;
+        }
+
+        /* Add custom CSS for other users' messages (white speech bubble) */
+        .other-user-message {
+            background-color: #fff; /* White color for other users' speech bubble */
+            color: #000; /* Black text color for better contrast */
+            border-color: #ced4da; /* Gray border color for other users' speech bubble */
+            align-self: flex-start; /* Align other users' speech bubbles to the left */
+        }
+
+        /* Reduce the padding on the left and right sides of the chat container */
+        .chat-container {
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+
+        /* Add custom CSS for the "보내기" (Send) button */
+        .send-button, .exit-button {
+            background-color: #FF9933; /* Orange color for the buttons */
+            color: #fff; /* White text color for better contrast */
+            border-color: #FF9933; /* Orange border color for the buttons */
+            margin: 5px; /* Add margin between the buttons */
+            padding: 8px 12px; /* Add padding to the buttons */
+            border-radius: 5px; /* Rounded corners for the buttons */
+            cursor: pointer; /* Show pointer cursor on hover */
+        }
+        .exit-button {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+        }
+
+        /* Adjust layout for the input group */
+            .input-group {
+        display: flex;
+        align-items: center;
+        margin-bottom: 0; /* Remove margin between input group and message input box */
+        margin-top: 5px; /* Add some spacing between the input group and the chat container */
+    }
+
+    .input-group-prepend {
+        flex: 0 0 auto;
+    }
+
+    .input-group-text {
+        background-color: #f7f7f7;
+        border-color: #ced4da;
+        color: #6c757d;
+        margin-right: 5px; /* Add some spacing between the label and input box */
+    }
+
+    .form-control {
+        flex: 1 1 auto;
+        margin-right: 0; /* Remove the right margin of the input box */
+    }
+
+    .input-group-append {
+        flex: 0 0 auto;
+    }
+</style>
+</head>
+<body>
+<button class="exit-button" onclick="location.href='/chat/room'">나가기</button>
+<div class="container" id="app" v-cloak>
+    <div>
+        <h2>{{room.name}}</h2>
+    </div>
+    <div class="chat-container">
+        <ul class="list-group">
+            <!-- Use v-for to display reversed messages array -->
+            <li v-for="message in messages.slice().reverse()" :key="message.timestamp"
+                :class="{'list-group-item': true, 'user-message': message.sender === sender, 'other-user-message': message.sender !== sender}"
+            >
+                <div class="message-container">
+                    <div class="message-content">
+                        <strong>{{ message.sender }}</strong> : {{ message.message }}
+                    </div>
+                </div>
+                <span class="timestamp" :class="{ 'user-message': message.sender === sender }">{{ message.timestamp }}</span>
+                <!-- Display timestamp next to the chat box with the user-message class for your messages -->
+            </li>
+        </ul>
+    </div>
+
+    <div class="message-input">
+        <div class="input-group">
+            <div class="input-group-prepend">
+                <span class="input-group-text">내용</span>
+            </div>
+            <input type="text" class="form-control" v-model="message" v-on:keypress.enter="sendMessage">
+            <div class="input-group-append">
+                <button class="btn btn-primary send-button" type="button" @click="sendMessage">보내기</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- JavaScript -->
+<script src="/webjars/vue/2.5.16/dist/vue.min.js"></script>
+<script src="/webjars/axios/0.17.1/dist/axios.min.js"></script>
+<script src="/webjars/sockjs-client/1.1.2/sockjs.min.js"></script>
+<script src="/webjars/stomp-websocket/2.3.3-1/stomp.min.js"></script>
+
+<script>
+    //alert(document.title);
+    // websocket & stomp initialize
+    var sock = new SockJS("/ws/chat");
+    var ws = Stomp.over(sock);
+    var reconnect = 0;
+    // vue.js
+    var vm = new Vue({
+        el: '#app',
+        data: {
+            roomId: '',
+            room: {},
+            sender: '',
+            message: '',
+            messages: []
+        },
+        created() {
+            this.roomId = localStorage.getItem('wschat.roomId');
+            this.sender = localStorage.getItem('wschat.sender');
+            this.findRoom();
+        },
+        methods: {
+            findRoom: function() {
+                axios.get('/chat/room/'+this.roomId).then(response => { this.room = response.data; });
+            },
+            sendMessage: function() {
+                ws.send("/app/chat/message", {}, JSON.stringify({type:'TALK', roomId:this.roomId, sender:this.sender, message:this.message}));
+                this.message = '';
+            },
+            recvMessage: function(recv) {
+                var timestamp = new Date().toLocaleTimeString();
+                var messageObj = {
+                    type: recv.type,
+                    sender: recv.type === 'ENTER' ? '[알림]' : recv.sender,
+                    message: recv.message,
+                    timestamp: timestamp // Add the timestamp to the received message object
+                };
+                this.messages.unshift(messageObj);
+            }
+        }
+    });
+
+    function connect() {
+        // pub/sub event
+        ws.connect({}, function(frame) {
+            ws.subscribe("/topic/chat/room/"+vm.$data.roomId, function(message) {
+                var recv = JSON.parse(message.body);
+                vm.recvMessage(recv);
+            });
+            ws.send("/app/chat/message", {}, JSON.stringify({type:'ENTER', roomId:vm.$data.roomId, sender:vm.$data.sender}));
+        }, function(error) {
+            if(reconnect++ <= 5) {
+                setTimeout(function() {
+                    console.log("connection reconnect");
+                    sock = new SockJS("/ws/chat");
+                    ws = Stomp.over(sock);
+                    connect();
+                }, 10*1000);
+            }
+        });
+    }
+    connect();
+</script>
+</body>
+</html>
