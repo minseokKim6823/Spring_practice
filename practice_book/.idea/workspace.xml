@@ -5,32 +5,46 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="76ee03ee-aa40-408e-8b14-50d3d138204a" name="Changes" comment="CRUD">
-      <change afterPath="$PROJECT_DIR$/../STOMP 예제 - 복사본 (2)/src/main/java/com/sample/stomp/config/SecurityConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../STOMP 예제 - 복사본 (2)/src/main/java/com/sample/stomp/config/StompWebSocketConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../STOMP 예제 - 복사본 (2)/src/main/java/com/sample/stomp/controller/ChatController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../STOMP 예제 - 복사본 (2)/src/main/java/com/sample/stomp/controller/RoomController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../STOMP 예제 - 복사본 (2)/src/main/java/com/sample/stomp/controller/StompChatController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../STOMP 예제 - 복사본 (2)/src/main/java/com/sample/stomp/dto/ChatMessageDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../STOMP 예제 - 복사본 (2)/src/main/java/com/sample/stomp/dto/ChatRoomDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../STOMP 예제 - 복사본 (2)/src/main/java/com/sample/stomp/handler/ChatHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../STOMP 예제 - 복사본 (2)/src/main/java/com/sample/stomp/repository/ChatRoomRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../STOMP 예제/src/main/java/com/sample/stomp/chatting/StompWebSocketConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../STOMP 예제/src/main/java/com/sample/stomp/model/DTO/ChatMessageDetailDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../STOMP 예제/src/main/java/com/sample/stomp/model/DTO/ChatMessageSaveDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../STOMP 예제/src/main/java/com/sample/stomp/model/DTO/ChatRoomDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../STOMP 예제/src/main/java/com/sample/stomp/model/DTO/ChatRoomDetailDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../STOMP 예제/src/main/java/com/sample/stomp/repository/ChatRoomRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../chatapp/src/main/java/com/example/chatapp/Chat.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../STOMP 예제/src/main/java/com/sample/stomp/StompApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/../STOMP 예제/src/main/java/com/sample/stomp/StompApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../STOMP 예제/src/main/java/com/sample/stomp/controller/ChatRoomController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../STOMP 예제/src/main/java/com/sample/stomp/controller/ChatRoomController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../STOMP 예제/src/main/java/com/sample/stomp/controller/MessageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../STOMP 예제/src/main/java/com/sample/stomp/controller/MessageController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../STOMP 예제/src/main/java/com/sample/stomp/controller/TimeEntity.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../STOMP 예제/src/main/java/com/sample/stomp/model/ChatMessage.java" beforeDir="false" afterPath="$PROJECT_DIR$/../STOMP 예제/src/main/java/com/sample/stomp/model/ChatMessage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../STOMP 예제/src/main/java/com/sample/stomp/model/ChatRoom.java" beforeDir="false" afterPath="$PROJECT_DIR$/../STOMP 예제/src/main/java/com/sample/stomp/model/ChatRoom.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../STOMP 예제/src/main/java/com/sample/stomp/service/ChatService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../STOMP 예제/src/main/java/com/sample/stomp/service/ChatService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../STOMP 예제/src/main/resources/templates/chat/room.html" beforeDir="false" afterPath="$PROJECT_DIR$/../STOMP 예제/src/main/resources/templates/chat/room.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../STOMP 예제/src/main/resources/templates/chat/roomdetail.html" beforeDir="false" afterPath="$PROJECT_DIR$/../STOMP 예제/src/main/resources/templates/chat/roomdetail.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/jojoldu/book/springboot/config/JpaConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/jojoldu/book/springboot/config/auth/CustomOAuth2UserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/jojoldu/book/springboot/config/auth/LoginUser.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/jojoldu/book/springboot/config/auth/LoginUserArgumentResolver.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/jojoldu/book/springboot/config/auth/SecurityConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/jojoldu/book/springboot/config/auth/dto/OAuthAttributes.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/jojoldu/book/springboot/config/auth/dto/SessionUser.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/jojoldu/book/springboot/domain/user/Role.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/jojoldu/book/springboot/domain/user/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/jojoldu/book/springboot/domain/user/UserRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.10.2/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.2/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.10.2/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.2/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.10.2/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.2/fileHashes/resourceHashesCache.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.10.2/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.2/javaCompile/classAnalysis.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.10.2/javaCompile/jarAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.2/javaCompile/jarAnalysis.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.10.2/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.2/javaCompile/javaCompile.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.10.2/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.2/javaCompile/taskHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.10.2/taskHistory/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.2/taskHistory/taskHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.10.2/taskHistory/taskHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.2/taskHistory/taskHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/packages/com.jojoldu.book.springboot.web.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/packages/com.jojoldu.book.springboot.web.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/application-oauth.properties" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/application-oauth.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/static/js/app/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/static/js/app/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/output.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/binary/output.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/output.bin.idx" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/binary/output.bin.idx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/results.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/binary/results.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/com/jojoldu/book/springboot/web/IndexController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/com/jojoldu/book/springboot/web/IndexController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/resources/application-oauth.properties" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/resources/application-oauth.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/resources/templates/index.mustache" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/resources/templates/index.mustache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jojoldu/book/springboot/web/IndexController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jojoldu/book/springboot/web/IndexController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application-oauth.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application-oauth.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/index.mustache" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/index.mustache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/jojoldu/book/springboot/web/PostsApiControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/jojoldu/book/springboot/web/PostsApiControllerTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,7 +72,13 @@
               <path>
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
                 <item name="freelec-springboot2-webservice" type="f1a62948:ProjectNode" />
-                <item name="Run Configurations" type="7b0102dc:RunConfigurationsNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="freelec-springboot2-webservice" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="verification" type="c8890929:TasksNode$1" />
               </path>
             </expand>
             <select />
@@ -72,6 +92,7 @@
       <list>
         <option value="JUnit4 Test Class" />
         <option value="Interface" />
+        <option value="Enum" />
         <option value="Class" />
       </list>
     </option>
@@ -87,16 +108,16 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit4",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4": "",
-    "last_opened_file_path": "C:/Users/alstj/Spring_Study/chatapp",
-    "settings.editor.selected.configurable": "reference.settingsdialog.project.gradle"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit4&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4&quot;: &quot;&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/alstj/Spring_Study/practice_book&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settingsdialog.project.gradle&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="com.jojoldu.book.springboot.web" />
@@ -108,7 +129,7 @@
       <recent name="com.jojoldu.book.springboot.web.dto" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Application">
+  <component name="RunManager">
     <configuration name="Application" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.jojoldu.book.springboot.Application" />
       <module name="freelec-springboot2-webservice.main" />
@@ -121,30 +142,6 @@
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
-    </configuration>
-    <configuration name="HelloControllerTest.hello가_리턴된다" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;com.jojoldu.book.springboot.web.HelloControllerTest.hello가_리턴된다&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <ForceTestExec>true</ForceTestExec>
-      <method v="2" />
     </configuration>
     <configuration name="HelloResponseDtoTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
@@ -218,13 +215,35 @@
       <ForceTestExec>true</ForceTestExec>
       <method v="2" />
     </configuration>
+    <configuration name="practice_book [test]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <ForceTestExec>false</ForceTestExec>
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.practice_book [test]" />
         <item itemvalue="Application.Application" />
         <item itemvalue="Gradle.PostsRepositoryTest.게시글저장_불러오기" />
         <item itemvalue="Gradle.HelloResponseDtoTest.롬복_기능_테스트" />
         <item itemvalue="Gradle.HelloResponseDtoTest" />
-        <item itemvalue="Gradle.HelloControllerTest.hello가_리턴된다" />
       </list>
     </recent_temporary>
   </component>

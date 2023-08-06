@@ -4,7 +4,7 @@
 .gradle
 .idea
 
-application-real-oauth.properties
+
 
 build
 out

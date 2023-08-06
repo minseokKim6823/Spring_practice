@@ -1,5 +1,7 @@
 package com.jojoldu.book.springboot.web;
 
+import com.jojoldu.book.springboot.config.auth.LoginUser;
+import com.jojoldu.book.springboot.config.auth.dto.SessionUser;
 import com.jojoldu.book.springboot.service.PostsService;
 import com.jojoldu.book.springboot.web.dto.PostsResponseDto;
 import lombok.RequiredArgsConstructor;
@@ -8,13 +10,20 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 
+import javax.servlet.http.HttpSession;
+
 @RequiredArgsConstructor
 @Controller
 public class IndexController {
     private final PostsService postsService;
     @GetMapping("/")
-    public String index(Model model){
+    public String index(Model model, @LoginUser SessionUser user){
+        //어느 컨트롤러든지@LoginUser로 세션 정보 가져올 수 있다.
+
         model.addAttribute("posts", postsService.findAllDesc());
+        if(user != null){
+            model.addAttribute("userName",user.getName());
+        }
         return "index";
     }
 
