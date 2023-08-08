@@ -1,6 +1,6 @@
 package com.jojoldu.book.springboot.domain.posts;
-
 import com.jojoldu.book.springboot.domain.BaseTimeEntity;
+import com.jojoldu.book.springboot.domain.user.User;
 import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -22,21 +22,22 @@ public class Posts extends BaseTimeEntity{
     @Column(columnDefinition = "TEXT", nullable = false)
     private String content;
     private String author;
-
+    private String tags;
 
     @Column(name = "like_count")
-    @ColumnDefault("0")
     private Integer like_count;
 
     @Builder
-    public Posts(String title, String content, String author, Integer like_count){
+    public Posts(String title, String content, String author, String tags, Integer like_count){
         this.title = title;
         this.content = content;
         this.author = author;
+        this.tags = tags;
         this.like_count=like_count;
     }
     public void update(String title, String content) {
         this.title = title;
         this.content = content;
+        this.tags = tags;
     }
 }

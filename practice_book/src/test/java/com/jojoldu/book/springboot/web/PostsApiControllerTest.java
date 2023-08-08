@@ -70,7 +70,6 @@ public class PostsApiControllerTest {
         PostsSaveRequestDto requestDto = PostsSaveRequestDto.builder()
                 .title(title)
                 .content(content)
-                .author("author")
                 .build();
 
         String url = "http://localhost:" + port + "/api/v1/posts";
@@ -94,7 +93,6 @@ public class PostsApiControllerTest {
         Posts savedPosts = postsRepository.save(Posts.builder()
                 .title("title")
                 .content("content")
-                .author("author")
                 .build());
 
         Long updateId = savedPosts.getId();

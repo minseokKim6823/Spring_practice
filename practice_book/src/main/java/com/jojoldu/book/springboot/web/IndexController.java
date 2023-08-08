@@ -19,7 +19,6 @@ public class IndexController {
     @GetMapping("/")
     public String index(Model model, @LoginUser SessionUser user){
         //어느 컨트롤러든지@LoginUser로 세션 정보 가져올 수 있다.
-
         model.addAttribute("posts", postsService.findAllDesc());
         if(user != null){
             model.addAttribute("userName",user.getName());

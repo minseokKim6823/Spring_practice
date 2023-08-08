@@ -1,5 +1,6 @@
 package com.jojoldu.book.springboot.service;
 
+import com.jojoldu.book.springboot.config.auth.dto.SessionUser;
 import com.jojoldu.book.springboot.domain.posts.Posts;
 import com.jojoldu.book.springboot.domain.posts.PostsRepository;
 import com.jojoldu.book.springboot.web.dto.PostsListResponseDto;
@@ -19,10 +20,9 @@ public class PostsService {
     private final PostsRepository postsRepository;
 
     @Transactional
-    public Long save(PostsSaveRequestDto requestDto) {
-        return postsRepository.save(requestDto.toEntity()).getId();
+    public Long save(PostsSaveRequestDto requestDto, SessionUser user) {
+        return postsRepository.save(requestDto.toEntity(user)).getId();
     }
-
     @Transactional
     public Long update(Long id, PostsUpdateRequestDto requestDto) {
         Posts posts = postsRepository.findById(id)

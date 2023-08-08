@@ -11,6 +11,7 @@ public class PostsListResponseDto {
     private Long id;
     private String title;
     private String author;
+    private String tags;
     private Integer like_count;
     private LocalDateTime modifiedDate;
 
@@ -18,6 +19,7 @@ public class PostsListResponseDto {
         this.id=entity.getId();
         this.title=entity.getTitle();
         this.author=entity.getAuthor();
+        this.tags=entity.getTags();
         this.like_count=entity.getLike_count();
         this.modifiedDate=entity.getModifiedDate();
     }

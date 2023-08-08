@@ -7,7 +7,7 @@ import org.springframework.security.config.annotation.web.configuration.EnableWe
 import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
 
 @RequiredArgsConstructor
-@EnableWebSecurity
+@EnableWebSecurity//Spring Security 활성화
 //SpringSecurity 활성화
 public class SecurityConfig extends WebSecurityConfigurerAdapter {
     private final CustomOAuth2UserService customOAuth2UserService;
@@ -16,9 +16,9 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
     protected void configure(HttpSecurity http) throws Exception{
         http
                 .csrf().disable()
-                .headers().frameOptions().disable()
+                .headers().frameOptions().disable() //h2-console 사용하지 않을 시 지워도 됨 
                 .and()
-                    .authorizeRequests()
+                    .authorizeRequests()//URL별 권환 관리
                     .antMatchers("/" ,"/css/**","/images/**","/js/**","/h2-console/**").permitAll()
                     .antMatchers("/api/v1/**").hasRole(Role.USER.name())
                     .anyRequest().authenticated()
