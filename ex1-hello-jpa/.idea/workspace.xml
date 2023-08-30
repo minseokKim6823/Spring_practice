@@ -4,28 +4,67 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a81f81a3-35b4-4bfc-baf2-3368c2c90489" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../jpa-basic/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../jpa-basic/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../jpa-basic/.idea/aws.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../jpa-basic/.idea/discord.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../jpa-basic/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../jpa-basic/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../jpa-basic/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../jpa-basic/src/main/resources/META-INF/maven/archetype.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../jpa-basic/src/main/resources/archetype-resources/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../jpa-basic/src/main/resources/archetype-resources/src/main/java/App.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../jpa-basic/src/main/resources/archetype-resources/src/test/java/AppTest.java" afterDir="false" />
+    <list default="true" id="6f857fbf-3d4c-4a2d-ad74-c4e1dc6723c4" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/jpabasic/ex1hellojpa/Ex1HelloJpaApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/jpabasic/ex1hellojpa/JPAMain.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/jpabasic/ex1hellojpa/Member.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chatapp/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chatapp/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chatapp/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chatapp/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chatapp/gradlew" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chatapp/gradlew.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chatapp/settings.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chatapp/src/main/java/com/example/chatapp/ChatappApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chatapp/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chatapp/src/test/java/com/example/chatapp/ChatappApplicationTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../practice_book/.gradle/4.10.2/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../practice_book/.gradle/4.10.2/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../practice_book/.gradle/4.10.2/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../practice_book/.gradle/4.10.2/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../practice_book/.gradle/4.10.2/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../practice_book/.gradle/4.10.2/javaCompile/classAnalysis.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../practice_book/.gradle/4.10.2/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../practice_book/.gradle/4.10.2/javaCompile/javaCompile.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../practice_book/.gradle/4.10.2/taskHistory/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../practice_book/.gradle/4.10.2/taskHistory/taskHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../practice_book/.gradle/4.10.2/taskHistory/taskHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../practice_book/.gradle/4.10.2/taskHistory/taskHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../practice_book/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../practice_book/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../practice_book/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../practice_book/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../practice_book/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../practice_book/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../practice_book/build/classes/java/main/com/jojoldu/book/springboot/Application.class" beforeDir="false" afterPath="$PROJECT_DIR$/../practice_book/build/classes/java/main/com/jojoldu/book/springboot/Application.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../practice_book/build/resources/main/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../practice_book/build/resources/main/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../practice_book/out/production/classes/com/jojoldu/book/springboot/Application.class" beforeDir="false" afterPath="$PROJECT_DIR$/../practice_book/out/production/classes/com/jojoldu/book/springboot/Application.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../practice_book/out/production/classes/com/jojoldu/book/springboot/service/PostsService.class" beforeDir="false" afterPath="$PROJECT_DIR$/../practice_book/out/production/classes/com/jojoldu/book/springboot/service/PostsService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../practice_book/out/production/classes/com/jojoldu/book/springboot/web/PostsApiController.class" beforeDir="false" afterPath="$PROJECT_DIR$/../practice_book/out/production/classes/com/jojoldu/book/springboot/web/PostsApiController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../practice_book/src/main/java/com/jojoldu/book/springboot/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/../practice_book/src/main/java/com/jojoldu/book/springboot/Application.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../practice_book/src/main/java/com/jojoldu/book/springboot/config/WebConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/../practice_book/src/main/java/com/jojoldu/book/springboot/config/WebConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../practice_book/src/main/java/com/jojoldu/book/springboot/domain/BaseTimeEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/../practice_book/src/main/java/com/jojoldu/book/springboot/domain/BaseTimeEntity.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
-  <component name="ProjectId" id="2SmcWeF1maZ2sK96kdDaUMfigZc" />
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="Use Maven wrapper" />
+        <option name="useMavenConfig" value="true" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="2ThBmvk7iIwn0Crc39r4T6nACIj" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -33,17 +72,30 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "C:/Users/alstj/Spring_Study/jpa-basic"
+    "last_opened_file_path": "C:/Users/alstj/Spring_Study/ex1-hello-jpa",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "reference.settingsdialog.project.gradle"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\alstj\Spring_Study\ex1-hello-jpa\src\main\java" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="jpabasic.ex1hellojpa" />
+      <recent name="" />
+    </key>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="a81f81a3-35b4-4bfc-baf2-3368c2c90489" name="Changes" comment="" />
-      <created>1689755231730</created>
+      <changelist id="6f857fbf-3d4c-4a2d-ad74-c4e1dc6723c4" name="Changes" comment="" />
+      <created>1691485596530</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1689755231730</updated>
+      <updated>1691485596530</updated>
     </task>
     <servers />
   </component>
