@@ -5,82 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6f857fbf-3d4c-4a2d-ad74-c4e1dc6723c4" name="Changes" comment=".">
-      <change afterPath="$PROJECT_DIR$/src/main/java/jpabasic/ex1hellojpa/Team.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../STOMP 예제 - 복사본/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../STOMP 예제/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../STOMP 예제/.idea/STOMP 예제.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../STOMP 예제/.idea/aws.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../STOMP 예제/.idea/compiler.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../STOMP 예제/.idea/discord.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../STOMP 예제/.idea/gradle.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../STOMP 예제/.idea/jarRepositories.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../STOMP 예제/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../STOMP 예제/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../STOMP 예제/.idea/modules/stomp.main.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../STOMP 예제/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../STOMP 예제/STOMP 예제/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../STOMP 예제/STOMP 예제/build.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../STOMP 예제/STOMP 예제/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../STOMP 예제/STOMP 예제/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../STOMP 예제/STOMP 예제/gradlew" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../STOMP 예제/STOMP 예제/gradlew.bat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../STOMP 예제/STOMP 예제/settings.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../STOMP 예제/STOMP 예제/src/main/java/com/sample/stomp/Repository/ChatMessageRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../STOMP 예제/STOMP 예제/src/main/java/com/sample/stomp/StompApplication.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../STOMP 예제/STOMP 예제/src/main/java/com/sample/stomp/config/ChatConfig.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../STOMP 예제/STOMP 예제/src/main/java/com/sample/stomp/controller/ChatRoomController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../STOMP 예제/STOMP 예제/src/main/java/com/sample/stomp/controller/MessageController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../STOMP 예제/STOMP 예제/src/main/java/com/sample/stomp/model/ChatMessage.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../STOMP 예제/STOMP 예제/src/main/java/com/sample/stomp/model/ChatMessageEntity.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../STOMP 예제/STOMP 예제/src/main/java/com/sample/stomp/model/ChatRoom.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../STOMP 예제/STOMP 예제/src/main/java/com/sample/stomp/service/ChatMessageService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../STOMP 예제/STOMP 예제/src/main/java/com/sample/stomp/service/ChatService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../STOMP 예제/STOMP 예제/src/main/java/com/sample/stomp/service/YourService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../STOMP 예제/STOMP 예제/src/main/resources/application.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../STOMP 예제/STOMP 예제/src/main/resources/templates/chat/room.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../STOMP 예제/STOMP 예제/src/main/resources/templates/chat/roomdetail.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../STOMP 예제/STOMP 예제/src/main/resources/templates/chat/websocket.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../STOMP 예제/STOMP 예제/src/test/java/com/sample/stomp/StompApplicationTests.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../chat/src/main/java/com/example/chat/ChatApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/../chat/src/main/java/com/example/chat/ChatApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../chat/src/main/java/com/example/chat/chatting/DTO/ChatRoom.java" beforeDir="false" afterPath="$PROJECT_DIR$/../chat/src/main/java/com/example/chat/chatting/DTO/ChatRoom.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/jpabasic/ex1hellojpa/Ex1HelloJpaApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jpabasic/ex1hellojpa/Ex1HelloJpaApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/jpabasic/ex1hellojpa/JPAMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jpabasic/ex1hellojpa/JPAMain.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/jpabasic/ex1hellojpa/Member.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jpabasic/ex1hellojpa/Member.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../jpashop" beforeDir="false" afterPath="$PROJECT_DIR$/../jpashop" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../test/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../test/build.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../test/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../test/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../test/gradlew" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../test/gradlew.bat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../test/settings.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../test/src/main/java/com/sample/stomp/StompApplication.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../test/src/main/java/com/sample/stomp/config/ChatConfig.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../test/src/main/java/com/sample/stomp/controller/ChatRoomController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../test/src/main/java/com/sample/stomp/controller/MessageController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../test/src/main/java/com/sample/stomp/model/ChatMessage.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../test/src/main/java/com/sample/stomp/model/ChatRoom.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../test/src/main/java/com/sample/stomp/service/ChatService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../test/src/main/resources/application.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../test/src/main/resources/templates/chat/room.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../test/src/main/resources/templates/chat/roomdetail.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../test/src/test/java/com/sample/stomp/StompApplicationTests.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../untitled/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../untitled/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../untitled/.idea/aws.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../untitled/.idea/discord.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../untitled/.idea/gradle.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../untitled/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../untitled/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../untitled/build.gradle.kts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../untitled/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../untitled/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../untitled/gradlew" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../untitled/gradlew.bat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../untitled/settings.gradle.kts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../untitled/src/main/java/org/example/Main.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -116,7 +42,7 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "C:/Users/alstj/Spring_Study/ex1-hello-jpa",
+    "last_opened_file_path": "C:/Users/alstj/Spring_Study",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.2",
@@ -175,7 +101,14 @@
       <option name="project" value="LOCAL" />
       <updated>1693751070795</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary=".">
+      <created>1699546558134</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1699546558134</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">

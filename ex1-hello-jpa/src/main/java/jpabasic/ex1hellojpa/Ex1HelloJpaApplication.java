@@ -36,7 +36,6 @@ public class  Ex1HelloJpaApplication {
 
                 Team newTeam =em.find(Team.class,100L);
                 findMember.setTeam(newTeam);
-
                 tx.commit();
         }catch (Exception e){
                 tx.rollback();
