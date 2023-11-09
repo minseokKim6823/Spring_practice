@@ -15,53 +15,29 @@ public class  Ex1HelloJpaApplication {
 
         EntityTransaction tx = em.getTransaction();//JPA의 모든 데이터 변경은 트랜잭션 안에서 일어나야 함
         tx.begin();
-
         try {
+                //저장
+                Team team = new Team();
+                team.setName("TeamA");
+                em.persist(team);
+
                 Member member = new Member();
-                member.setUsername("C");
-
-                em.persist(member);
-
-                tx.commit();
-                //영속
-
-                /*Member member =new Member(200L,"member200");
+                member.setUsername("member1");
+                member.setTeam(team);//자동으로 FK값 사용
                 em.persist(member);
 
                 em.flush();
+                em.clear();
 
-                System.out.println("==============");
-                tx.commit();*/
-                //Member member = new Member();
-                //member.setId(2L);
-                //member.setName("HelloB"); //회원 등록
+                Member findMember =em.find(Member.class, member.getId());
 
-//                Member member = em.find(Member.class, 150L);
-//                member.setName("HelloJPA");
-//
-//                em.clear();
-//                Member member2 = em.find(Member.class, 150L);
-//
-//                System.out.println("==============");
-//                tx.commit();
+                Team findTeam= findMember.getTeam();
+                System.out.println("findTeam =" +findTeam.getId());
 
-                /*
-                //비영속
-                Member member =new Member();
-                member.setId(100L);
-                member.setName("HelloJPA");
+                Team newTeam =em.find(Team.class,100L);
+                findMember.setTeam(newTeam);
 
-                //영속
-                em.persist(member);
-                */
-
-                //List<Member> result = em.createQuery("select m from Member as m ", Member.class)
-                        /*.setFirstResult(1)
-                        .setMaxResults(10)//처움부터 끝까지 지정가능
-                        .getResultList();
-
-                /*for(Member member : result){
-                        System.out.println("member.name = " + member.getName());*/
+                tx.commit();
         }catch (Exception e){
                 tx.rollback();
         }finally {

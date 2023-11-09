@@ -11,7 +11,6 @@ import java.util.HashSet;
 import java.util.Set;
 
 @Getter
-@JsonProperty("1")
 
 public class ChatRoom {
     private String roomId;
